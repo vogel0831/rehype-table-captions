@@ -1,6 +1,6 @@
 # rehype-table-caption
 
-A remark plugin to use table captions.
+A rehype plugin to use table captions.
 
 # Install
 

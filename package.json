@@ -1,7 +1,7 @@
 {
-  "name": "remark-inline-quotes",
+  "name": "rehype-table-captions",
   "version": "0.0.0",
-  "description": "A remark plugin to use table captions.",
+  "description": "A rehype plugin to use table captions.",
   "type": "module",
   "license": "MIT",
   "sideEffects": false,
@@ -46,7 +46,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vogel0831/rehype-table-caption.git"
+    "url": "git+https://github.com/vogel0831/rehype-table-captions.git"
   },
   "keywords": [
     "caption",
