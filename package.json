@@ -1,6 +1,6 @@
 {
   "name": "rehype-table-captions",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A rehype plugin to use table captions.",
   "type": "module",
   "license": "MIT",
