@@ -1,0 +1,60 @@
+{
+  "name": "remark-inline-quotes",
+  "version": "0.0.0",
+  "description": "A remark plugin to use table captions.",
+  "type": "module",
+  "license": "MIT",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "bun run clean && bun run build:js && bun run build:types",
+    "build:js": "bun build ./src/index.ts --outdir ./dist --target node --format esm --sourcemap=external",
+    "build:types": "tsc --project tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "bun run typecheck && bun run build"
+  },
+  "peerDependencies": {
+    "remark-gfm": "^4.0.1"
+  },
+  "dependencies": {
+    "hast": "^1.0.0",
+    "unist-util-visit": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/hast": "^3.0.5",
+    "@types/mdast": "^4.0.4"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vogel0831/rehype-table-caption.git"
+  },
+  "keywords": [
+    "caption",
+    "html",
+    "markdown",
+    "hast",
+    "table",
+    "rehype",
+    "rehype-plugin"
+  ]
+}
